@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VinylBot</title>
+  </head>
+  <body>
+    <h1>VinylBot</h1>
+    <p>Hi, you can ask me anything about music, and I'll do my best to provide a helpful response.</p>
+    <form action="/" method="POST">
+      <input type="text" size="80" id="input" name="input" />
+      <button type="submit">Ask</button>
+    </form>
+    <div id="conversation">
+      <!-- This is where the conversation will be displayed -->
+      <p>{{ response | safe }}</p>
+    </div>
+  </body>
+</html>
